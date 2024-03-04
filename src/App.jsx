@@ -1,12 +1,50 @@
-import './App.css'
-import SayHello from "./Hello.jsx";
+import AppName from "./components/AppName.jsx";
 
 function App() {
-  return(
-      <div>
-          <SayHello></SayHello>
-      </div>
-  )
+    return (<center className='todo-container'>
+        <AppName/>
+        <div className="container text-center">
+            <div className="row">
+                <div className="col-6">
+                    <input type='text' placeholder='Enter Todo'/>
+                </div>
+                <div className="col-4">
+                    <input type='date' placeholder='Date'/>
+                </div>
+                <div className="col-2">
+                    <button type="button"
+                            className="btn btn-success">Add
+                    </button>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-6">
+                    Buy Milk
+                </div>
+                <div className="col-4">
+                    5/12/2100
+                </div>
+                <div className="col-2">
+                    <button type="button"
+                            className="btn btn-danger">Delete
+                    </button>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-6">
+                    go to college
+                </div>
+                <div className="col-4">
+                    5/12/2100
+                </div>
+                <div className="col-2">
+                    <button type="button"
+                            className="btn btn-danger">Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </center>)
 }
 
 export default App
