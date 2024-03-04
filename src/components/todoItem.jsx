@@ -1,11 +1,14 @@
+let todoName = 'Buy Milk';
+let todoDate = '5/12/2100';
+
 function TodoItem() {
     return <div className="container text-center">
         <div className="row">
             <div className="col-6">
-                Buy Milk
+                {todoName}
             </div>
             <div className="col-4">
-                5/12/2100
+                {todoDate}
             </div>
             <div className="col-2">
                 <button type="button"
