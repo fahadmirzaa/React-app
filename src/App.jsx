@@ -3,11 +3,13 @@ import AddTodo from "./components/addTodo.jsx";
 import TodoItem from "./components/todoItem.jsx";
 
 function App() {
-    return (<center className='todo-container'>
+    return (<center>
         <AppName/>
         <AddTodo></AddTodo>
-        <TodoItem></TodoItem>
-        <TodoItem></TodoItem>
+        <div className='items-container'>
+            <TodoItem></TodoItem>
+            <TodoItem></TodoItem>
+        </div>
     </center>)
 }
 
